@@ -26,51 +26,46 @@ body {
     border: 0.5px dashed;
     opacity: 0.2;
     margin: 15px 0;
+    width: 90%;
 }
 
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding-top: 5rem;
 }
 
-img {
+.about img {
     width: 20vw;
     height: auto; 
-    margin: 20px;
     box-shadow: 0 0 1rem var(--blue);
     border-radius: 1rem;
+    margin-right: 20px;
 }
 
-.about-content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    margin: 50px auto;
-
-}
-
-.about-content .about-me .intro {
+.about-content .intro {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.5;
     text-shadow: 0 0 1rem var(--black);
+
 }
 
-.about-content .about-me .prof {
+.about-content .prof {
     font-size: 1rem;
     line-height: 1.5;
     text-shadow: 0 0 1rem var(--black);
+
 }
 
-.about-content .about-me p {
+.about-content p {
     line-height: 1.5;
     text-align: left;
     margin-bottom: 15px;
     text-shadow: 0 0 1rem var(--black);
+    width: 90%;
 }
 
 .about-content .btn {

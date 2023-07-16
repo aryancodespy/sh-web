@@ -35,9 +35,6 @@ body {
 
 /* Header */
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px 20%;
     position: fixed;
     width: 100%;
@@ -45,14 +42,15 @@ body {
     top: 0;
 }
 .navbar {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .navbar a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 35px;
     font-weight: 600;
     color: var(--white);
     padding: 5px 0;
@@ -166,28 +164,32 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0;
+    padding: 20px 0;
 }
 
 .social-media a{
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 2rem;
-	height: 2rem;
-	background: rgba(0, 0, 0, 0.5);
-	border: 0.15rem solid var(--blue);
+    flex-wrap: wrap;
+	width: 3rem;
+	height: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+	border: 1px solid var(--blue);
 	border-radius: 50%;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: var(--blue);
 	margin: 1.5rem 1.5rem 1.5rem 0;
-	transition: 0.5s ease;
+	transition: 0.5s ease-in-out;
+    box-shadow: 0 0 1rem var(--blue);
 }
 
 .social-media a:hover {
-	background: var(--blue);
+    background: var(--blue);
 	color: var(--black);
 	box-shadow: 0 0 1rem var(--blue);
-    border: 0;
+    transform: scale(1.2);
 }
 
 .back-heading {
