@@ -1,0 +1,65 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Global Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --orange: #fa5b0f;
+    --black: #000000;
+    --white: #fafafa;
+    --gray: #898989;
+}
+
+.dash {
+    border: 0.5px dashed;
+    opacity: 0.2;
+    margin: 15px 0;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    background: url("../images/image1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;
+    height: 350px;
+
+}
+
+.about-content {
+    width: 50%;
+    max-width: 450px;
+}
+
+.about-content .intro {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.about-content .prof {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.about-content p{
+    font-size: 14px;
+    line-height: 1.5;;
+}
+
+.about-content .btn {
+    margin-top: 15px;
+}

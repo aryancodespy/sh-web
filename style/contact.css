@@ -1,0 +1,64 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Global Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --orange: #fa5b0f;
+    --black: #000000;
+    --white: #fafafa;
+    --gray: #898989;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact form {
+	max-width: 70rem;
+	margin: 1rem auto;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 1.6rem;
+	color: var(--text-color);
+	background: rgba(137,137,137, 0.2);
+	border-radius: 0.8rem;
+    margin: 0.5rem 0;
+	border: 1px solid var(--main-color);
+}
+
+.contact form .input-box input {
+	width: 49%;
+}
+
+.contact form textarea {
+	resize: none;
+}
+
+.contact form .btn {
+	margin-top: 2rem;
+	cursor: pointer;
+}
