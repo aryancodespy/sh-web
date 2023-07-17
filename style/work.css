@@ -18,12 +18,17 @@
     --gray: #898989;
 }
 
+html {
+    overflow: auto;
+}
+
 body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-html {
-    overflow: auto;
+.header {
+   background: rgba(0, 0, 0, 0.15);
+
 }
 
 .work {
@@ -38,7 +43,7 @@ html {
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 2.5rem;
-    padding: 25px 50px;
+    padding: 50px;
 }
 
 .work-item {
@@ -101,4 +106,28 @@ html {
 .layer a:hover {
 	transform: scale(1.1);
     box-shadow: 0 0 1rem var(--blue);
+}
+
+.work .btn {
+    display: inline-block;
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+    background-color: var(--blue);
+    padding: 10px 40px;
+    text-align: center;
+    color: var(--white);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    font-weight: 600;
+    box-shadow: 0 0 1rem var(--blue);
+    margin: 20px auto;
+    margin-bottom: 100px;
+}
+
+.work .btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    box-shadow: none;
 }

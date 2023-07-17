@@ -196,12 +196,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 10%;
-    left: 0;
+    position: relative;
+    bottom: 50px;
+    left: 0;  
     right: 0;
-    bottom: 60%;
-    
 }
 
 .back-heading .fade-heading {
