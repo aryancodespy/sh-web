@@ -12,10 +12,18 @@
 }
 
 :root {
-    --orange: #fa5b0f;
+    --blue: #08a9c1;
     --black: #000000;
     --white: #fafafa;
     --gray: #898989;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+html {
+    overflow: auto;
 }
 
 .work {
@@ -25,15 +33,72 @@
     flex-direction: column;
 }
 
-.work-item {
-    width: 200px;
-    height: 200px;
-    background: #fa5b0f;
-    border: 1px solid #fff;
+.work-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2.5rem;
+    padding: 25px 50px;
 }
 
-.work-content {
-    display: grid;
-    grid-template-columns: repeat(3,2fr);
-    gap: 1rem;
+.work-item {
+	position: relative;
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem var(--blue);
+	overflow: hidden;
+	display: flex;
+}
+
+.work-item img {
+	width: 100%;
+	transition: 0.5s ease;
+}
+
+.work-item:hover img {
+	transform: scale(1.1);
+}
+
+.work-item .layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), var(--black));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 4rem;
+	transform: translateY(100%);
+	transition: 0.5s ease;
+}
+
+.work-item:hover .layer {
+	transform: translateY(0);
+}
+
+.layer h4 {
+	font-size: 2.5rem;
+}
+
+.layer a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	background: var(--blue);
+	border-radius: 50%;
+}
+
+.layer a i {
+	font-size: 2rem;
+	color: var(--black);
+}
+
+.layer a:hover {
+	transform: scale(1.1);
+    box-shadow: 0 0 1rem var(--blue);
 }
