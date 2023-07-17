@@ -1,16 +1,16 @@
 
 /* ---------------------------------Scroll Reveal ------------------------------- */
 ScrollReveal({ 
-    reset: false,
+    reset: true,
     distance: '80px',
     duration: 2000,
     delay: 200
 });
 
-ScrollReveal().reveal('.header, .intro', { origin: 'top' });
-ScrollReveal().reveal('.prof', { origin: 'right' });
-ScrollReveal().reveal(' footer', { origin: 'bottom' });
-ScrollReveal().reveal('.btn-container', { origin: 'left' });
+ScrollReveal().reveal('.header ', { origin: 'top' });
+ScrollReveal().reveal('.fade-heading, .right', { origin: 'right' });
+ScrollReveal().reveal('.bottom', { origin: 'bottom' });
+ScrollReveal().reveal('.front-heading, .left', { origin: 'left' });
 
 /*-------------------------------------- Typed Js --------------------------------------------*/
 
