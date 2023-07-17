@@ -9,7 +9,7 @@ ScrollReveal({
 
 ScrollReveal().reveal('.header, .intro', { origin: 'top' });
 ScrollReveal().reveal('.about-content p', { origin: 'right' });
-ScrollReveal().reveal('.about img, .bottom', { origin: 'bottom' });
+ScrollReveal().reveal('.about img, .bottom, .dash', { origin: 'bottom' });
 ScrollReveal().reveal('.prof', { origin: 'left' });
 
 /*-------------------------------------- Typed Js --------------------------------------------*/
