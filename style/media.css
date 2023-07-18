@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
 	html {
