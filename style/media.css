@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
 	html {
@@ -6,6 +10,14 @@
 
     .navbar a {
         font-size: 2rem;
+    }
+
+    .back-heading {
+        position: relative;
+        top: 10px;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
 
@@ -42,9 +54,48 @@
 		grid-template-columns: 1fr;
 	}
 
-	.contact {
-		min-height: auto;
-	}
+    .skills {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .skill-content {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .tools {
+        margin-top: 50px;
+    }
+
+    .tool-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tool {
+        width: 150px;
+        height: 150px;
+        border-radius: 1rem;
+        padding: 1px 10%;
+    }
+
+    .tool img {
+        width: 30px;
+        height: 30px;
+        margin: 5px 5px 0 5px;
+        padding: 5px;
+    }
+
+    .tools .back-heading {
+        margin-bottom: 40px;
+    }
 
 	.footer {
 		padding: 2rem 3%;
@@ -96,6 +147,14 @@
         width: 100%;
     }
 
+    .back-heading .fade-heading {
+        font-size: 6rem;
+    }
+
+    .tool {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -112,5 +171,13 @@
 
     .navbar a {
         margin: 0 5px;
+    }
+
+    .back-heading .fade-heading {
+        font-size: 4rem;
+    }
+
+    .back-heading .front-heading .heading{
+        font-size: 2rem;
     }
 }

@@ -22,18 +22,20 @@ html {
     overflow: auto;
 }
 
+
 .skill-content {
-    margin: 0 50px;
-    padding: 0 150px;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
 }
 
-.skill-content ul{
+.skill-content{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.skill-content ul li {
+.skill-content .skill {
     list-style: none;
     margin: 20px 0;
 }
@@ -71,20 +73,18 @@ html {
     background: linear-gradient(90deg, var(--blue)95%, var(--black) 5%);
 }
 
-.tool-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.tools {
+    margin-top: 100px;
 }
 
 .tool-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
+    column-gap: 2rem;
     row-gap: 1.5rem;
     width: 80%;
     max-width: 500px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .tool {
