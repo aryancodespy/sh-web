@@ -97,7 +97,7 @@ html {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 2rem;
     background: rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 1rem var(--blue);
 }
