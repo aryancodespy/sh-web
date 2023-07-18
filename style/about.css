@@ -43,6 +43,21 @@ body {
     box-shadow: 0 0 1rem var(--blue);
     border-radius: 1rem;
     margin-right: 20px;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .about-content .intro {
