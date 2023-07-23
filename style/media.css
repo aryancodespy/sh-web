@@ -23,6 +23,10 @@ body {
         right: 0;
         bottom: 0;
     }
+
+    .tool h4 {
+        font-size: 2rem;
+    }
 }
 
 
@@ -49,6 +53,27 @@ body {
 	section {
 		padding: 10rem 3% 2rem;
 	}
+
+    .about {
+		flex-direction: column;
+        text-align: center;
+	}
+
+    .about img {
+        margin:0 auto;
+		width: 50vw;
+		margin-bottom: 4rem;
+	}
+
+
+    .about .dash {
+        width: 100%;
+    }
+
+    .about p {
+        text-align: center;
+        width: 100%;
+    }
 
     .work {
 		padding-bottom: 7rem;
@@ -78,16 +103,19 @@ body {
     }
 
     .tool-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
     }
+
     .tool {
         width: 150px;
         height: 150px;
         border-radius: 1rem;
         padding: 1px 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .tool img {
@@ -95,6 +123,10 @@ body {
         height: 30px;
         margin: 5px 5px 0 5px;
         padding: 5px;
+    }
+
+    .tool h4 {
+        font-size: 1rem;
     }
 
     .tools .back-heading {
@@ -116,25 +148,6 @@ body {
 		font-size: 3rem;
 	}
     
-    .about img {
-        margin:0 auto;
-		width: 50vw;
-		margin-bottom: 4rem;
-	}
-
-	.about {
-		flex-direction: column;
-        text-align: center;
-	}
-
-    .about p {
-        text-align: center;
-        width: 100%;
-    }
-
-    .about .dash {
-        width: 100%;
-    }
 
     .back-heading .fade-heading {
         font-size: 6rem;
@@ -143,6 +156,16 @@ body {
     .tool {
         width: 100px;
         height: 100px;
+    }
+
+    .tool-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 668px) {
+    .tool-content {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -168,5 +191,17 @@ body {
 
     .back-heading .front-heading .heading{
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .about img {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .about img {
+        width: 50vw;
     }
 }
