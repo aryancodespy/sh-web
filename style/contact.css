@@ -56,3 +56,25 @@ html {
 .contact form .input-box input {
 	width: 49%;
 }
+
+ .btn {
+    display: inline-block;
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+    background-color: var(--blue);
+    padding: 10px 40px;
+    text-align: center;
+    color: var(--white);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    font-weight: 600;
+    box-shadow: 0 0 1rem var(--blue);
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    box-shadow: none;
+}
