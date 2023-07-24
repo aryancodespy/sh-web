@@ -83,6 +83,11 @@ body {
 		grid-template-columns: 1fr;
 	}
 
+
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+
     .skills {
         display: flex; 
         justify-content: center;
@@ -174,6 +179,14 @@ body {
     }
 
     .contact form .input-box input {
+        width: 100%;
+    }
+
+    .video-content .back-heading {
+        margin-bottom: 50px;
+    }
+
+    .video-container .video {
         width: 100%;
     }
 }

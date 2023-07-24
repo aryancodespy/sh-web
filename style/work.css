@@ -26,8 +26,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
 .work {
     display: flex;
     justify-content: center;
@@ -40,7 +38,7 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 2.5rem;
-    padding: 50px;
+    padding-top: 50px;
 }
 
 .work-item {
@@ -118,7 +116,7 @@ body {
     transition-duration: 300ms;
     font-weight: 600;
     box-shadow: 0 0 1rem var(--blue);
-    margin: 20px auto;
+    margin: 40px auto;
     margin-bottom: 100px;
 }
 
@@ -128,3 +126,32 @@ body {
     border: 2px solid var(--blue);
     box-shadow: none;
 }
+
+.video-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.video-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+.video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 450px;
+	height: auto;
+}
+
+.video video {
+	width: 100%;
+	object-fit: contain;
+	border-radius: 1rem
+}
+
