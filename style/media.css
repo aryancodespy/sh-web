@@ -140,9 +140,14 @@ body {
 
 @media (max-width: 768px) {
 
+    .header {
+        padding: 4px 20%;
+    }
+
 	.home {
 		flex-direction: column;
 	}
+
 
 	.home-content h1 {
 		font-size: 3rem;
@@ -187,7 +192,7 @@ body {
 
 @media (max-width: 365px) {
 	.about img {
-		width: 50vw;
+		width: 40vw;
 	}
 
     .header {
@@ -216,6 +221,22 @@ body {
 
 @media (max-height: 450px) {
     .about {
-        flex-direction: row;
+        flex-direction: row-reverse;
+        text-align: left;
+        margin: 20px;
     }
+
+    .about p {
+        text-align: left;
+        width: 70%;
+    }
+
+    .about .dash {
+        width: 80%;
+    }
+
+    .about img {
+        width: 15vw;
+    }
+    
 }
