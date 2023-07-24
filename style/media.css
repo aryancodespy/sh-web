@@ -161,6 +161,16 @@ body {
     .tool-content {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .contact form .input-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
 }
 
 @media (max-width: 668px) {
@@ -180,6 +190,10 @@ body {
 		width: 50vw;
 	}
 
+    .header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 
     .navbar a {
         margin: 0 5px;
@@ -200,8 +214,8 @@ body {
     }
 }
 
-@media (max-width: 300px) {
-    .about img {
-        width: 50vw;
+@media (max-height: 450px) {
+    .about {
+        flex-direction: row;
     }
 }

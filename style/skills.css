@@ -100,6 +100,12 @@ html {
     border-radius: 2rem;
     background: rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 1rem var(--blue);
+    transition: all 0.3s ease;
+}
+
+.tool:hover {
+    transform: scale(1.1);
+    box-shadow: none;
 }
 
 .tool h4{

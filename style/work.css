@@ -26,10 +26,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.header {
-   background: rgba(0, 0, 0, 0.15);
 
-}
 
 .work {
     display: flex;
