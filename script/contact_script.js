@@ -8,9 +8,9 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.header', { origin: 'top' });
-ScrollReveal().reveal('.right', { origin: 'right' });
+ScrollReveal().reveal('.right, .front-heading', { origin: 'right' });
 ScrollReveal().reveal('.bottom', { origin: 'bottom' });
-ScrollReveal().reveal('.left', { origin: 'left' });
+ScrollReveal().reveal('.left, .fade-heading', { origin: 'left' });
 
 /*-------------------------------------- Typed Js --------------------------------------------*/
 
