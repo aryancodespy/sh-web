@@ -24,8 +24,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-	overflow-x: hidden;
-	overflow-y: auto;
+	overflow: auto;
 }
 
 body {
